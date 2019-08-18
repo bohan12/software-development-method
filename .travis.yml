@@ -13,4 +13,4 @@ before_script:
 script:
 
   - npm run start-babel
-  - cd client && nmp install
+  - cd client && nmp installssssss
