@@ -6,7 +6,7 @@ node_js:
 
 before_script:
   - mkdir -p data/db
-  - mongod --dbpath=data/db &
+  - mongod --dbpath=data/dbs&
   - sleep 5
   - mongo mydb_test --eval 'db.createUser({user:"travis",pwd:"test",roles:["readWrite"]});'
 
